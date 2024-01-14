@@ -1,0 +1,22 @@
+$root: '.navigation';
+
+#{$root} {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+
+  &__link {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+  }
+
+  &__link_active {
+    font-weight: 500;
+    //для мобилки и планшета border-bottom: 1px solid;
+  }
+}

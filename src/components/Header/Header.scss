@@ -1,0 +1,21 @@
+$root: '.header';
+
+#{$root} {
+  & {
+    padding: 18px 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &_blue-color {
+    background-color: #073042;
+  }
+
+  &__logo {
+    width: 38px;
+    height: 38px;
+  }
+  
+}

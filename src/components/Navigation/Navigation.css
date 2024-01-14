@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+.navigation__link {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+.navigation__link_active {
+  font-weight: 500;
+}/*# sourceMappingURL=Navigation.css.map */

@@ -1,0 +1,16 @@
+.load-other {
+  width: 320px;
+  height: 36px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  background: none;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid #424242;
+}/*# sourceMappingURL=LoadOtherButton.css.map */

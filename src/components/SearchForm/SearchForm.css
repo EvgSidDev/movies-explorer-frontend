@@ -1,0 +1,34 @@
+.search {
+  padding-bottom: 48px;
+}
+.search__form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  margin-bottom: 33px;
+  border-bottom: 1px solid #424242;
+  align-items: center;
+  gap: 46px;
+}
+.search__text {
+  color: #8b8b8b;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+  background: none;
+  border-style: none;
+  width: 100%;
+}
+.search__text:focus {
+  outline: none;
+}
+.search__find {
+  background: none;
+  border: none;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+}
+.search__find:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=SearchForm.css.map */

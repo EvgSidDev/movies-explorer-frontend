@@ -1,0 +1,55 @@
+$root: '.card';
+
+#{$root} {
+  background-color: #222;
+  border-radius: 10px;
+  width: 270px;
+//   height: 215px;
+
+  &__image {
+    border-radius: 10px 10px 0 0;
+    width: 270px;
+    height: 151px;
+    object-fit: contain;
+  }
+
+  &__description {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 14px 12px;
+  }
+
+  &__title-duration {
+    width: 206px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
+
+  &__duration {
+    margin: 0;
+    color: #8b8b8b;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__like {
+    width: 16px;
+    height: 16px;
+    object-fit: none;
+  }
+
+  &__delete {
+    width: 16px;
+    height: 16px;
+    object-fit: none;
+  }
+}
