@@ -9,6 +9,7 @@
 @media screen and (max-width: 768px) {
   .app {
     width: 768px;
+    position: relative;
   }
 }
 

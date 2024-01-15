@@ -1,0 +1,50 @@
+.side-bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .side-bar {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 520px;
+    height: 100%;
+    background-color: #202020;
+    flex-direction: column;
+    padding-top: 22.44px;
+    padding-right: 22.44px;
+    margin: auto 0;
+  }
+  .side-bar__visible {
+    display: flex;
+  }
+  .side-bar__close {
+    width: 22px;
+    align-self: flex-end;
+  }
+  .side-bar__lk-link {
+    display: flex;
+    gap: 7px;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    padding-top: 621px;
+  }
+  .side-bar__lk-logo {
+    border-radius: 50px;
+    background: #313131;
+    padding: 7px;
+  }
+  .side-bar__lk-logo_blue-color {
+    background: #0F4157;
+  }
+}/*# sourceMappingURL=SideBAr.css.map */

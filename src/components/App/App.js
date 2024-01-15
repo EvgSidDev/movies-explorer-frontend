@@ -11,10 +11,21 @@ import ProtectedRouteElement from '../ProtectedRouteElement/ProtectedRouteElemen
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 import Profile from '../Profile/Profile';
+import SideBar from '../SideBar/SideBar';
+import { useState } from 'react';
 
 function App() {
   const navigate = useNavigate();
   const thisLocation = useLocation().pathname;
+  const [sideBarOpen, setSideBarOpen] = useState(false);
+
+  function closeSideBar() {
+    setSideBarOpen(false);
+  }
+
+  function openSideBar() {
+    setSideBarOpen(true);
+  }
   
   function goBack() {
     navigate(-1);
@@ -35,6 +46,7 @@ function App() {
                   loggedIn={loggedIn}
                   element={Main}
                   isMain={true}
+                  openSideBar={openSideBar}
                 />
               }
             />
@@ -45,6 +57,7 @@ function App() {
                   loggedIn={loggedIn}
                   element={Movies}
                   thisLocation={thisLocation}
+                  openSideBar={openSideBar}
                 />
               }
             />
@@ -55,6 +68,7 @@ function App() {
                   loggedIn={loggedIn}
                   element={SavedMovies}
                   thisLocation={thisLocation}
+                  openSideBar={openSideBar}
                 />
               }
             />
@@ -68,11 +82,13 @@ function App() {
                   element={Profile}
                   isMain={false}
                   footerIsHidden={true}
+                  openSideBar={openSideBar}
                 />
               }
             />
             <Route path='*' element={<NotFound404 goBack={goBack} />} />
           </Routes>
+          <SideBar location={thisLocation} closeAction={closeSideBar} isOpen={sideBarOpen}/>
         </div>
       </CurrentUserContext.Provider>
     </AppContext.Provider>

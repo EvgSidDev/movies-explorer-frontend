@@ -4,10 +4,13 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 const ProtectedRouteElement = ({ element: Component, ...props }) => {
-  
   return props.loggedIn ? (
     <div>
-      <Header isMain={props.isMain} location={props.thisLocation}/>
+      <Header
+        isMain={props.isMain}
+        location={props.thisLocation}
+        openAction={props.openSideBar}
+      />
       <Component {...props} />
       {!props.footerIsHidden && <Footer />}
     </div>

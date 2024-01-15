@@ -60,4 +60,21 @@ $root: '.nav-tab';
     text-align: center;
     text-decoration: none;
   }
+
+  &__side-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    &__lk-link {
+      display: none;
+    }
+
+    &__side-bar {
+      display: block;
+      width: 44px;
+    }
+  }
 }

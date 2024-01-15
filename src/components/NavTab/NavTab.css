@@ -50,4 +50,17 @@
   margin: auto;
   text-align: center;
   text-decoration: none;
+}
+.nav-tab__side-bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tab__lk-link {
+    display: none;
+  }
+  .nav-tab__side-bar {
+    display: block;
+    width: 44px;
+  }
 }/*# sourceMappingURL=NavTab.css.map */

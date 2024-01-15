@@ -1,0 +1,63 @@
+$root: '.side-bar';
+
+#{$root} {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 520px;
+    height: 100%;
+    background-color: #202020;
+    flex-direction: column;
+    padding-top: 22.44px;
+    padding-right: 22.44px;
+    margin: auto 0;
+
+    &__visible {
+        display: flex;
+    }
+
+    &__close {
+      width: 22px;
+      align-self: flex-end;
+    }
+
+    &__lk-link {
+        display: flex;
+        gap: 7px;
+        margin: 0 auto;
+        width: 100px;
+        border-radius: 40px;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 26px;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        padding-top: 621px;
+      }
+    
+      
+      &__lk-logo {
+        border-radius: 50px;
+        background: #313131;
+        padding: 7px;
+    
+        &_blue-color {
+          background: #0F4157;
+        }
+      }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+  }
+}

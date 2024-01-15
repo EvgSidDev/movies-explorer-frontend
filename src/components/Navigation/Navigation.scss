@@ -17,6 +17,39 @@ $root: '.navigation';
 
   &__link_active {
     font-weight: 500;
-    //для мобилки и планшета border-bottom: 1px solid;
+  }
+
+  &__link:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .header>#{$root} {
+    display: none; 
+  }
+  
+  #{$root} {
+
+   flex-direction: column;
+   text-align: center;
+   margin: 0 auto;
+   padding-top: 105.44px;
+   gap: 28px;
+
+   &__link {
+    margin: auto;
+    width: max-content;
+   }
+
+   &__link:first-child {
+    display: block;
+  }
+
+  &__link_active {
+    font-weight: 400;
+    border-bottom: 1px solid;
+  }
   }
 }
