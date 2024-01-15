@@ -53,3 +53,48 @@ $root: '.promo';
     opacity: .8;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+
+    padding: 140px 30px 66px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__info {
+      margin: auto;
+      flex-direction: column-reverse;
+      gap: 48px;
+      align-items: center;
+    }
+
+    &__logo {
+      width: 310px;
+      height: 304px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 40px;
+      line-height: 50px;
+      padding-bottom: 22px;
+    }
+
+    &__description {
+      width: 260px;
+      margin: auto;
+      text-align: center;
+    }
+
+    &__button {
+      width: 89px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
+  }
+}

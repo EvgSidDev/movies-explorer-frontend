@@ -58,10 +58,11 @@ $root: '.about-project';
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
   }
 
   &__other-weeks {
-    width: 80%;
+    width: calc(100% - 140px);
     text-align: center;
   }
 
@@ -72,6 +73,7 @@ $root: '.about-project';
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
   }
 
   &__name-week {
@@ -79,5 +81,40 @@ $root: '.about-project';
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
+    padding-top: 14px;
+    margin: auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    padding: 90px 50px;
+
+    &__descriptions {
+      gap: 30px;
+      padding-bottom: 93px;
+    }
+
+    &__description-text {
+      font-size: 12px;
+      line-height: 18px;
+      padding-top: 22px;
+    }
+
+    &__first-week {
+      width: 140px;
+      text-align: center;
+    }
+
+    &__name-week {
+      font-weight: 400;
+    }
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
   }
 }

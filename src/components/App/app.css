@@ -5,3 +5,15 @@
   font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
 }
+
+@media screen and (max-width: 768px) {
+  .app {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .app {
+    width: 320px;
+  }
+}

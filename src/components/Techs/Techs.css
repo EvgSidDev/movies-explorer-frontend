@@ -43,6 +43,7 @@
   gap: 10px;
   list-style: none;
   padding-top: 100px;
+  padding-left: 0;
 }
 .techs__tool {
   width: 90px;
@@ -55,4 +56,26 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.56px;
+}
+
+@media screen and (max-width: 768px) {
+  .techs {
+    padding: 90px 50px;
+  }
+  .techs__title-info {
+    padding-top: 80px;
+  }
+  .techs__description-info {
+    padding-top: 22px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+  }
+  .techs__tool {
+    width: 84px;
+    padding-bottom: 21px;
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
 }/*# sourceMappingURL=Techs.css.map */

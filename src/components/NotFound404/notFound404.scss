@@ -41,3 +41,19 @@ $root: '.not-found';
     opacity: .7;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    padding-top: 408px;
+
+    &__link { 
+      padding-bottom: 222px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
+  }
+}

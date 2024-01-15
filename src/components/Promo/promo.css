@@ -44,4 +44,37 @@
 }
 .promo__button:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    padding: 140px 30px 66px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo__info {
+    margin: auto;
+    flex-direction: column-reverse;
+    gap: 48px;
+    align-items: center;
+  }
+  .promo__logo {
+    width: 310px;
+    height: 304px;
+  }
+  .promo__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 22px;
+  }
+  .promo__description {
+    width: 260px;
+    margin: auto;
+    text-align: center;
+  }
+  .promo__button {
+    width: 89px;
+  }
 }/*# sourceMappingURL=promo.css.map */

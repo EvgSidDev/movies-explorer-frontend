@@ -1,1 +1,25 @@
-/*# sourceMappingURL=FilterCheckbox.css.map */
+.checkbox {
+  display: flex;
+  gap: 14px;
+}
+.checkbox__name {
+  margin: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .checkbox {
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .checkbox {
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+  }
+}/*# sourceMappingURL=FilterCheckbox.css.map */

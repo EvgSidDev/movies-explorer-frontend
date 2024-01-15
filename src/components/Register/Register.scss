@@ -99,3 +99,15 @@ $root: '.register';
     height: 10px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    padding-top: 232px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
+  }
+}

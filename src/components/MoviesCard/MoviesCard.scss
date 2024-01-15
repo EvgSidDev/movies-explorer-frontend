@@ -4,7 +4,6 @@ $root: '.card';
   background-color: #222;
   border-radius: 10px;
   width: 270px;
-//   height: 215px;
 
   &__image {
     border-radius: 10px 10px 0 0;
@@ -51,5 +50,23 @@ $root: '.card';
     width: 16px;
     height: 16px;
     object-fit: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    width: 339px;
+
+    &__image {
+      width: 339px;
+      height: 190px;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
   }
 }

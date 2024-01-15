@@ -36,6 +36,10 @@ $root: '.about-me';
     margin: 0;
   }
 
+  &__photo {
+    object-fit: cover;
+  }
+
   &__speciality {
     padding-top: 18px;
     color: #fff;
@@ -66,12 +70,52 @@ $root: '.about-me';
   }
 
   &__link:hover {
-    // text-decoration: 1px solid #fff;
     border-bottom: 1px solid #fff;
   }
 
   &__photo {
     height: 327px;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    padding: 90px 50px;
+
+    &__info {
+      gap: 49px;
+    }
+
+    &__photo {
+      width: 255px;
+      height: 307px;
+      object-fit: cover;
+    }
+
+    &__name {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -1.6px;
+    }
+
+    &__speciality {
+      padding-top: 16px;
+      font-size: 12px;
+      line-height: 28px;
+      margin: 0;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 18px;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
   }
 }

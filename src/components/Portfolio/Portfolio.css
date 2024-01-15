@@ -10,6 +10,7 @@
   padding-bottom: 50px;
 }
 .portfolio__links {
+  margin: 0;
   list-style: none;
   padding-left: 0;
 }
@@ -43,4 +44,14 @@
 .portfolio__link-image {
   height: 100%;
   align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    padding: 0 50px 90px 50px;
+  }
+  .portfolio__link {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+  }
 }/*# sourceMappingURL=Portfolio.css.map */

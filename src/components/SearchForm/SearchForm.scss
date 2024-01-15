@@ -1,9 +1,9 @@
 $root: '.search';
 
 #{$root} {
-   padding-bottom: 48px;
+  padding-bottom: 48px;
 
-    &__form {
+  &__form {
     display: flex;
     justify-content: space-between;
     padding-bottom: 13px;
@@ -36,5 +36,23 @@ $root: '.search';
 
   &__find:hover {
     opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    padding-bottom: 60px;
+
+    &__form {
+      margin-bottom: 29px;
+      align-items: center;
+      // gap: 46px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
   }
 }

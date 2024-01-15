@@ -51,4 +51,10 @@
   font-weight: 500;
   line-height: normal;
   border-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .login {
+    padding-top: 232px;
+  }
 }/*# sourceMappingURL=Login.css.map */

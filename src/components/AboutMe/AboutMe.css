@@ -30,6 +30,10 @@
   letter-spacing: -2px;
   margin: 0;
 }
+.about-me__photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .about-me__speciality {
   padding-top: 18px;
   color: #fff;
@@ -63,4 +67,35 @@
 .about-me__photo {
   height: 327px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    padding: 90px 50px;
+  }
+  .about-me__info {
+    gap: 49px;
+  }
+  .about-me__photo {
+    width: 255px;
+    height: 307px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about-me__name {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+  .about-me__speciality {
+    padding-top: 16px;
+    font-size: 12px;
+    line-height: 28px;
+    margin: 0;
+  }
+  .about-me__text {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 20px;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */

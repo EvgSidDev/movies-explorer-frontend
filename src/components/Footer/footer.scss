@@ -3,8 +3,7 @@ $root: '.footer';
 #{$root} {
   display: flex;
   flex-direction: column;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 0 70px;
 
   &__copyright-links {
     width: 100%;
@@ -44,6 +43,19 @@ $root: '.footer';
     color: #8b8b8b;
     margin: 0 auto;
     padding-bottom: 20px;
-    padding-top: 80px;
+    padding-top: 79px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    padding: 0 50px;
+    
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
   }
 }

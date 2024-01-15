@@ -1,14 +1,1 @@
-.movies {
-  padding: 70px 70px 0 70px;
-}
-.movies__list {
-  padding-top: 70px;
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 32px;
-  list-style: none;
-  padding-bottom: 30px;
-}/*# sourceMappingURL=SavedMovies.css.map */
+/*# sourceMappingURL=SavedMovies.css.map */

@@ -84,4 +84,10 @@
 }
 .register__indent {
   height: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .register {
+    padding-top: 232px;
+  }
 }/*# sourceMappingURL=Register.css.map */

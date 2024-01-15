@@ -89,6 +89,23 @@ $root: '.profile';
     line-height: normal;
     background: none;
     border-style: none;
-    padding: 0;
+     padding-bottom: 269px;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+    padding-top: 236px;
+
+    &__form {
+      gap: 210px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
   }
 }

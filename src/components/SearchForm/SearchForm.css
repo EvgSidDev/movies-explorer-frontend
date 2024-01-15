@@ -31,4 +31,14 @@
 }
 .search__find:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    padding-bottom: 60px;
+  }
+  .search__form {
+    margin-bottom: 29px;
+    align-items: center;
+  }
 }/*# sourceMappingURL=SearchForm.css.map */

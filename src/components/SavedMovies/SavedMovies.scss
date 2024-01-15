@@ -1,16 +1,26 @@
 $root: '.movies';
 
 #{$root} {
-  padding: 70px 70px 0 70px;
 
-  &__list {
-    padding-top: 70px;
-    padding-left: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 32px;
-    list-style: none;
-    padding-bottom: 30px;
+  // &__list {
+  //   padding-top: 70px;
+  //   padding-left: 0;
+  //   display: grid;
+  //   grid-template-columns: repeat(4, 1fr);
+  //   column-gap: 20px;
+  //   row-gap: 32px;
+  //   list-style: none;
+  //   padding-bottom: 30px;
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  #{$root} {
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #{$root} {
+    
   }
 }

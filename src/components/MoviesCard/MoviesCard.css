@@ -45,4 +45,16 @@
   height: 16px;
   -o-object-fit: none;
      object-fit: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 339px;
+  }
+  .card__image {
+    width: 339px;
+    height: 190px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }/*# sourceMappingURL=MoviesCard.css.map */

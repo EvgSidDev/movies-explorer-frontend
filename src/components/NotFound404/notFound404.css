@@ -33,4 +33,13 @@
 }
 .not-found__link:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .not-found {
+    padding-top: 408px;
+  }
+  .not-found__link {
+    padding-bottom: 222px;
+  }
 }/*# sourceMappingURL=notFound404.css.map */

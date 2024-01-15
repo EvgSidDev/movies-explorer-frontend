@@ -2,6 +2,17 @@ $root: '.movies';
 
 #{$root} {
    padding: 70px 70px 0 70px;
-
-  
+ 
 }
+
+@media screen and (max-width: 768px) {
+   #{$root} {
+      padding: 70px 30px 30px 30px;
+   }
+ }
+ 
+ @media screen and (max-width: 320px) {
+   #{$root} {
+     
+   }
+ }

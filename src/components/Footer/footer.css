@@ -1,8 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 0 70px;
 }
 .footer__copyright-links {
   width: 100%;
@@ -38,5 +37,11 @@
   color: #8b8b8b;
   margin: 0 auto;
   padding-bottom: 20px;
-  padding-top: 80px;
+  padding-top: 79px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0 50px;
+  }
 }/*# sourceMappingURL=footer.css.map */
