@@ -1,5 +1,6 @@
 .search {
   padding-bottom: 48px;
+  width: 100%;
 }
 .search__form {
   display: flex;
@@ -33,7 +34,7 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .search {
     padding-bottom: 60px;
   }

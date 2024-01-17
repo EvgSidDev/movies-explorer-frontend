@@ -1,7 +1,7 @@
 .profile {
   margin: auto;
   width: 410px;
-  padding-top: 74px;
+  padding-top: 72px;
 }
 .profile__title {
   margin: 0;
@@ -15,7 +15,7 @@
 .profile__form {
   display: flex;
   flex-direction: column;
-  gap: 220px;
+  gap: 218px;
   justify-content: space-between;
   padding-bottom: 16px;
 }
@@ -81,9 +81,12 @@
   padding-bottom: 269px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .profile {
-    padding-top: 236px;
+    padding-top: 230px;
+  }
+  .profile__title {
+    padding-bottom: 93px;
   }
   .profile__form {
     gap: 210px;

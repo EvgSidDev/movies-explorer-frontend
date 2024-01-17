@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .side-bar {
     display: none;
     position: absolute;
@@ -20,7 +20,7 @@
     display: flex;
   }
   .side-bar__close {
-    width: 22px;
+    width: 31px;
     align-self: flex-end;
   }
   .side-bar__lk-link {
@@ -32,12 +32,12 @@
     color: #fff;
     font-size: 13px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: normal;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
     justify-content: center;
-    padding-top: 621px;
+    padding: 629px 0 0 55px;
   }
   .side-bar__lk-logo {
     border-radius: 50px;

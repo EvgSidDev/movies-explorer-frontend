@@ -23,6 +23,10 @@ $root: '.about-project';
     padding-bottom: 110px;
   }
 
+  &__description {
+    width: 550px;
+  }
+
   &__description-title {
     color: #fff;
     font-size: 20px;
@@ -47,7 +51,7 @@ $root: '.about-project';
   }
 
   &__first-week {
-    width: 20%;
+    width: 22%;
     text-align: center;
   }
 
@@ -86,13 +90,17 @@ $root: '.about-project';
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   #{$root} {
     padding: 90px 50px;
 
     &__descriptions {
       gap: 30px;
-      padding-bottom: 93px;
+      padding-bottom: 93px; 
+    }
+
+    &__description {
+      width: 319px; 
     }
 
     &__description-text {
@@ -113,7 +121,7 @@ $root: '.about-project';
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   #{$root} {
     
   }

@@ -4,7 +4,7 @@ $root: '.navigation';
   display: flex;
   gap: 16px;
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 64px;
   margin: auto;
 
   &__link {
@@ -24,7 +24,7 @@ $root: '.navigation';
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   
   .header>#{$root} {
     display: none; 
@@ -35,12 +35,15 @@ $root: '.navigation';
    flex-direction: column;
    text-align: center;
    margin: 0 auto;
-   padding-top: 105.44px;
+   padding: 105.44px 0 0 46px;
    gap: 28px;
 
    &__link {
     margin: auto;
     width: max-content;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
    }
 
    &__link:first-child {

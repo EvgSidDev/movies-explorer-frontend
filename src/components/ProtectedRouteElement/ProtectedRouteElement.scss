@@ -1,0 +1,8 @@
+$root: '.page';
+
+#{$root} {
+  &_dark {
+    opacity: 0.3;
+    background: #000;
+  }
+}

@@ -16,79 +16,69 @@ import { useState } from 'react';
 
 function App() {
   const navigate = useNavigate();
-  const thisLocation = useLocation().pathname;
-  const [sideBarOpen, setSideBarOpen] = useState(false);
+  const loggedIn = true;
+  const generalRoute = '/';
+  const moviesRoute = '/movies';
+  const savedMoviesRoute = '/saved-movies';
+  const location = useLocation().pathname;
+  const [sideBarIsOpen, setsideBarIsOpen] = useState(false);
+  const routes = { generalRoute, moviesRoute, savedMoviesRoute };
 
   function closeSideBar() {
-    setSideBarOpen(false);
+    setsideBarIsOpen(false);
   }
 
   function openSideBar() {
-    setSideBarOpen(true);
+    setsideBarIsOpen(true);
   }
-  
+
   function goBack() {
     navigate(-1);
   }
-  const loggedIn = true;
   return (
-    <AppContext.Provider
-    >
-      <CurrentUserContext.Provider
-      >
-        <div className='app'>
-        {false && <Preloader/>}
+    <AppContext.Provider value={{ loggedIn, location, routes, openSideBar, closeSideBar, sideBarIsOpen }}>
+      <CurrentUserContext.Provider>
+        <div className={`app`}>
+          {false && <Preloader />}
           <Routes>
             <Route
-              path='/'
+              path={generalRoute}
               element={
                 <ProtectedRouteElement
-                  loggedIn={loggedIn}
                   element={Main}
-                  isMain={true}
-                  openSideBar={openSideBar}
                 />
               }
             />
             <Route
-              path='/movies'
+              path={moviesRoute}
               element={
                 <ProtectedRouteElement
-                  loggedIn={loggedIn}
                   element={Movies}
-                  thisLocation={thisLocation}
-                  openSideBar={openSideBar}
                 />
               }
             />
             <Route
-              path='/saved-movies'
+              path={savedMoviesRoute}
               element={
                 <ProtectedRouteElement
-                  loggedIn={loggedIn}
                   element={SavedMovies}
-                  thisLocation={thisLocation}
-                  openSideBar={openSideBar}
                 />
               }
             />
             <Route path='/signup' element={<Register />} />
-            <Route path="/signin" element={<Login />} />
+            <Route path='/signin' element={<Login />} />
             <Route
               path='/profile'
               element={
                 <ProtectedRouteElement
-                  loggedIn={loggedIn}
                   element={Profile}
-                  isMain={false}
                   footerIsHidden={true}
-                  openSideBar={openSideBar}
                 />
               }
             />
             <Route path='*' element={<NotFound404 goBack={goBack} />} />
           </Routes>
-          <SideBar location={thisLocation} closeAction={closeSideBar} isOpen={sideBarOpen}/>
+          {sideBarIsOpen && <SideBar />}
         </div>
       </CurrentUserContext.Provider>
     </AppContext.Provider>

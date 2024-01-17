@@ -100,13 +100,13 @@ $root: '.register';
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   #{$root} {
     padding-top: 232px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   #{$root} {
     
   }

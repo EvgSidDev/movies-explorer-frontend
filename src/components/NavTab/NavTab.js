@@ -2,10 +2,13 @@ import { Link } from 'react-router-dom';
 import './NavTab.css';
 import lkLogo from './../../images/lk-logo.svg';
 import sideBarLogo from './../../images/side-bar-logo.svg';
+import { useContext } from 'react';
+import { AppContext } from '../../contexts/AppContext';
 
-function NavTab({ loggedIn = false, isMain, openAction }) {
-  function openSideBar() {
-    openAction();
+function NavTab() {
+  const { loggedIn, routes, location, openSideBar } = useContext(AppContext);
+  function openAction() {
+    openSideBar();
   }
   return (
     <ul className='nav-tab__links'>
@@ -13,25 +16,25 @@ function NavTab({ loggedIn = false, isMain, openAction }) {
         Аккаунт{' '}
         <img
           className={`nav-tab__lk-logo  ${
-            isMain ? `nav-tab__lk-logo_blue-color` : ``
+            location === routes.generalRoute ? `nav-tab__lk-logo_blue-color` : ``
           }`}
           src={lkLogo}
           alt='Логотип личного кабинета'
         ></img>
       </Link>
-      {isMain && (
+      {location === routes.generalRoute && (
         <Link className='nav-tab__signup-link' to='/signup'>
           Регистрация
         </Link>
       )}
-      {isMain && (
+      {location === routes.generalRoute && (
         <Link className='nav-tab__signin-link' to='/signin'>
           Войти
         </Link>
       )}
-      {!loggedIn && (
+      {loggedIn && (
         <img
-          onClick={openSideBar}
+          onClick={openAction}
           src={sideBarLogo}
           className='nav-tab__side-bar'
           alt='Боковое меню'

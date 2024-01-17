@@ -1,36 +1,37 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
+import { useContext } from 'react';
+import { AppContext } from '../../contexts/AppContext';
 
-function Navigation({ location, closeAction }) {
-  const general = '/';
-  const moviesRoute = '/movies';
-  const savedMoviesRoute = '/saved-movies';
+function Navigation() {
+  const { routes, location, closeSideBar } = useContext(AppContext);
+
   return (
     <ul className='navigation'>
       <Link
-        onClick={closeAction}
+        onClick={closeSideBar}
         className={`navigation__link ${
-          location === general ? 'navigation__link_active' : ''
+          location === routes.generalRoute ? 'navigation__link_active' : ''
         }`}
-        to={general}
+        to={routes.generalRoute}
       >
         Главная
       </Link>
       <Link
-        onClick={closeAction}
+        onClick={closeSideBar}
         className={`navigation__link ${
-          location === moviesRoute ? 'navigation__link_active' : ''
+          location === routes.moviesRoute ? 'navigation__link_active' : ''
         }`}
-        to={moviesRoute}
+        to={routes.moviesRoute}
       >
         Фильмы
       </Link>
       <Link
-        onClick={closeAction}
+        onClick={closeSideBar}
         className={`navigation__link ${
-          location === savedMoviesRoute ? 'navigation__link_active' : ''
+          location === routes.savedMoviesRoute ? 'navigation__link_active' : ''
         }`}
-        to={savedMoviesRoute}
+        to={routes.savedMoviesRoute}
       >
         Сохраненные фильмы
       </Link>

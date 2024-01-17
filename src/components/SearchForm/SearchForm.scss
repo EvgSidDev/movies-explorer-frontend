@@ -2,6 +2,7 @@ $root: '.search';
 
 #{$root} {
   padding-bottom: 48px;
+  width: 100%;
 
   &__form {
     display: flex;
@@ -39,20 +40,19 @@ $root: '.search';
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   #{$root} {
     padding-bottom: 60px;
 
     &__form {
       margin-bottom: 29px;
       align-items: center;
-      // gap: 46px;
     }
 
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   #{$root} {
   }
 }

@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { AppContext } from '../../contexts/AppContext';
+import './ProtectedRouteElement.css';
 
 const ProtectedRouteElement = ({ element: Component, ...props }) => {
-  return props.loggedIn ? (
-    <div>
-      <Header
-        isMain={props.isMain}
-        location={props.thisLocation}
-        openAction={props.openSideBar}
-      />
+  const { loggedIn, sideBarIsOpen } = useContext(AppContext);
+
+  return loggedIn ? (
+    <div className={`page ${sideBarIsOpen ? 'page_dark' : ''}`}>
+      <Header />
       <Component {...props} />
       {!props.footerIsHidden && <Footer />}
     </div>

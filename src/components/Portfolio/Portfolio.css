@@ -35,18 +35,18 @@
   line-height: 50px;
   letter-spacing: -1.2px;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   cursor: pointer;
 }
 .portfolio__link:hover {
   border-bottom: 1px solid #fff;
-  line-height: 49px;
 }
 .portfolio__link-image {
   height: 100%;
   align-self: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .portfolio {
     padding: 0 50px 90px 50px;
   }

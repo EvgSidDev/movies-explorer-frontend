@@ -34,7 +34,7 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  margin: auto;
+  margin-top: 11px;
   text-decoration: none;
 }
 .nav-tab__signin-link {
@@ -47,7 +47,7 @@
   width: 76px;
   height: 16px;
   padding: 8px 0;
-  margin: auto;
+  margin-top: 3px;
   text-align: center;
   text-decoration: none;
 }
@@ -55,7 +55,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .nav-tab__lk-link {
     display: none;
   }

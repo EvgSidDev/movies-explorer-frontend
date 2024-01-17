@@ -3,11 +3,15 @@ import movieDelete from '../../images/movie-delete.svg';
 import movieLiked from '../../images/movie-liked.svg';
 import movieNotLiked from '../../images/movie-not-liked.svg';
 import test from '../../images/photo.jpg';
+import { useContext } from 'react';
+import { AppContext } from '../../contexts/AppContext';
 function MoviesCard({ makeDelete = false, isLiked = false, data = {} }) {
+  const { sideBarIsOpen } = useContext(AppContext);
+
   const { url = test, title = 'Название фильма', duration = 0, number } = data;
 
   return (
-    <li className='card'>
+    <li className={`card ${ sideBarIsOpen ? 'card_dark' : ''}`}>
       <img className='card__image' src={url} alt={title}></img>
       <div className='card__description'>
         <div className='card__title-duration'>

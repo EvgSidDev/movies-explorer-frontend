@@ -3,7 +3,7 @@ $root: '.profile';
 #{$root} {
   margin: auto;
   width: 410px;
-  padding-top: 74px;
+  padding-top: 72px;
 
   &__title {
     margin: 0;
@@ -18,7 +18,7 @@ $root: '.profile';
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 220px;
+    gap: 218px;
     justify-content: space-between;
     padding-bottom: 16px;
   }
@@ -94,9 +94,13 @@ $root: '.profile';
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   #{$root} {
-    padding-top: 236px;
+    padding-top: 230px;
+
+    &__title {
+      padding-bottom: 93px;
+    }
 
     &__form {
       gap: 210px;
@@ -104,7 +108,7 @@ $root: '.profile';
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   #{$root} {
     
   }

@@ -4,7 +4,7 @@ $root: '.side-bar';
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   #{$root} {
     display: none;
     position: absolute;
@@ -23,7 +23,7 @@ $root: '.side-bar';
     }
 
     &__close {
-      width: 22px;
+      width: 31px;
       align-self: flex-end;
     }
 
@@ -36,12 +36,12 @@ $root: '.side-bar';
         color: #fff;
         font-size: 13px;
         font-weight: 500;
-        line-height: 26px;
+        line-height: normal;
         text-decoration: none;
         cursor: pointer;
         text-align: center;
         justify-content: center;
-        padding-top: 621px;
+        padding: 629px 0 0 55px;
       }
     
       
@@ -57,7 +57,7 @@ $root: '.side-bar';
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   #{$root} {
   }
 }

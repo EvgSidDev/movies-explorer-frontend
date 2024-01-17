@@ -3,14 +3,17 @@ import closeIcon from './../../images/close-icon.svg';
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import lkLogo from './../../images/lk-logo.svg';
+import { useContext } from 'react';
+import { AppContext } from '../../contexts/AppContext';
 
-function SideBar({ location, closeAction, isOpen }) {
-  
+function SideBar() {
+  const {closeSideBar, sideBarIsOpen } = useContext(AppContext);
+
     return (
-    <div className={`side-bar ${isOpen ? 'side-bar__visible' : ''}`}>
-      <img onClick={closeAction} src={closeIcon} className='side-bar__close' alt='Закрыть'></img>
-      <Navigation location={location} closeAction={closeAction}/>
-      <Link onClick={closeAction} className='side-bar__lk-link' to='/profile'>
+    <div className={`side-bar ${sideBarIsOpen ? 'side-bar__visible' : ''}`}>
+      <img onClick={closeSideBar} src={closeIcon} className='side-bar__close' alt='Закрыть'></img>
+      <Navigation/>
+      <Link onClick={closeSideBar} className='side-bar__lk-link' to='/profile'>
         Аккаунт{' '}
         <img
           className='side-bar__lk-logo'

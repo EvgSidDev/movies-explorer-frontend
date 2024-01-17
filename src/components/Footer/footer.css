@@ -3,6 +3,12 @@
   flex-direction: column;
   padding: 0 70px;
 }
+.footer__copyright {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
 .footer__copyright-links {
   width: 100%;
   display: flex;
@@ -21,6 +27,9 @@
 }
 .footer__link {
   color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
   text-decoration: none;
   cursor: pointer;
 }
@@ -40,8 +49,11 @@
   padding-top: 79px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .footer {
-    padding: 0 50px;
+    padding: 0 30px;
+  }
+  .footer__description {
+    padding-top: 48px;
   }
 }/*# sourceMappingURL=footer.css.map */

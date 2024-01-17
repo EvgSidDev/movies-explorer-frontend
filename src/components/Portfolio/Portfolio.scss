@@ -42,12 +42,12 @@ $root: '.portfolio';
     line-height: 50px;
     letter-spacing: -1.2px;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
     cursor: pointer;
   }
 
   &__link:hover {
     border-bottom: 1px solid #fff;
-    line-height: 49px;
   }
 
   &__link-image {
@@ -56,7 +56,7 @@ $root: '.portfolio';
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   #{$root} {
     padding: 0 50px 90px 50px;
 
@@ -67,7 +67,7 @@ $root: '.portfolio';
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   #{$root} {
     
   }

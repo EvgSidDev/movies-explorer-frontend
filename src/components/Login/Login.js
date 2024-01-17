@@ -13,7 +13,7 @@ function Login() {
         <p className='login__name-input'>Пароль</p>
         <input type='password' className='login__input'></input>
         <button type="submit" className="login__button">
-          Зарегистрироваться
+          Войти
         </button>
       </form>
     </div>

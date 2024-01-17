@@ -1,6 +1,6 @@
 .promo {
   background-color: #073042;
-  padding: 75px 70px 50px 70px;
+  padding: 75px 70px 75px 70px;
 }
 .promo__info {
   display: flex;
@@ -33,7 +33,8 @@
 .promo__button {
   color: #fff;
   width: 129px;
-  padding: 10px 20px;
+  text-align: center;
+  padding: 9px 0;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -41,14 +42,15 @@
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   text-decoration: none;
+  display: inline-block;
 }
 .promo__button:hover {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .promo {
-    padding: 140px 30px 66px 30px;
+    padding: 140px 30px 75px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +60,7 @@
     flex-direction: column-reverse;
     gap: 48px;
     align-items: center;
+    padding-bottom: 89px;
   }
   .promo__logo {
     width: 310px;
@@ -75,6 +78,6 @@
     text-align: center;
   }
   .promo__button {
-    width: 89px;
+    width: 129px;
   }
 }/*# sourceMappingURL=promo.css.map */

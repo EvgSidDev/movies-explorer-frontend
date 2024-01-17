@@ -2,7 +2,7 @@
   display: flex;
   gap: 16px;
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 64px;
   margin: auto;
 }
 .navigation__link {
@@ -19,7 +19,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .header > .navigation {
     display: none;
   }
@@ -27,13 +27,16 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    padding-top: 105.44px;
+    padding: 105.44px 0 0 46px;
     gap: 28px;
   }
   .navigation__link {
     margin: auto;
     width: -moz-max-content;
     width: max-content;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
   }
   .navigation__link:first-child {
     display: block;

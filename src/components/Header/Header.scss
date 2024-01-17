@@ -7,7 +7,7 @@ $root: '.header';
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+
   &_blue-color {
     background-color: #073042;
   }
@@ -18,13 +18,13 @@ $root: '.header';
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   #{$root} {
     padding: 18px 30px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   #{$root} {
     padding: 18px 14px;
   }

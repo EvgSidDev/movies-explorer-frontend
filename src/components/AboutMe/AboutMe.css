@@ -65,11 +65,12 @@
   border-bottom: 1px solid #fff;
 }
 .about-me__photo {
+  width: 270px;
   height: 327px;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .about-me {
     padding: 90px 50px;
   }
